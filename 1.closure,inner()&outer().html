@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    que:- Create a closure which will change the value of outer function variable inside inner function.
+         Display the old and new value in console
+            input outerFunc name=outerFunc
+            innerFunc name=innerFunc
+               old value="Mobile"
+               new value="laptop"
+    <script>
+        
+        function outerFunction(){
+            var value="mobile";
+        //console.log("old value="+value)
+        
+        function innerFunction(){
+            console.log("old value=" + value);
+
+          value="laptop";
+            console.log("new value=" + value);
+        }
+       innerFunction();
+    }outerFunction();
+
+  // use  change var name
+
+    // function outerFunction(){
+    //     var value="mobile";
+    //     function innerFunction(){
+    //         var value1="laptop";
+    //         console.log("old value="+value);
+    //         console.log("new value="+value1);
+    //     }innerFunction();
+    // }outerFunction();
+
+      
+      
+    </script>
+    
+</body>
+</html>
